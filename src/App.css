@@ -1,0 +1,34 @@
+
+
+@import '/vendors/bootstrap/css/bootstrap.min.css';
+@import"/vendors/animate/animate.min.css";
+@import"/vendors/animate/custom-animate.css";
+  @import"/vendors/fontawesome/css/all.min.css";
+  @import"/vendors/jarallax/jarallax.css";
+  @import"/vendors/jquery-magnific-popup/jquery.magnific-popup.css";
+  @import"/vendors/nouislider/nouislider.min.css";
+  @import"/vendors/nouislider/nouislider.pips.css";
+  @import"/vendors/odometer/odometer.min.css";
+  @import"/vendors/swiper/swiper.min.css";
+  @import"/vendors/pitoon-icons/style.css";
+  @import"/vendors/tiny-slider/tiny-slider.min.css";
+  @import"/vendors/reey-font/stylesheet.css";
+  @import"/vendors/owl-carousel/owl.carousel.min.css";
+  @import"/vendors/owl-carousel/owl.theme.default.min.css";
+  @import"/vendors/bxslider/jquery.bxslider.css";
+  @import"/vendors/bootstrap-select/css/bootstrap-select.min.css";
+  @import"/vendors/vegas/vegas.min.css";
+  @import"/vendors/jquery-ui/jquery-ui.css";
+  @import"/vendors/timepicker/timePicker.css";
+  @import"/vendors/ion.rangeSlider/css/ion.rangeSlider.min.css";
+
+
+
+  @import '/css/pitoon-rtl.css';
+  @import '/css/pitoon-rtl-custom.css';
+@import '/css/pitoon-responsive-rtl.css';
+
+@import '/vendors/layerdrops-toolbar/css/layerdrops-toolbar.css';
+.map-container{
+    height: 450px;
+}
