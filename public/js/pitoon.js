@@ -433,22 +433,34 @@
     }
   }
 
+
+
+
   if ($(".main-menu__list").length) {
     // dynamic current class
     let mainNavUL = $(".main-menu__list");
     dynamicCurrentMenuClass(mainNavUL);
   }
+
   if ($(".service-details__sidebar-service-list").length) {
     // dynamic current class
     let mainNavUL = $(".service-details__sidebar-service-list");
     dynamicCurrentMenuClass(mainNavUL);
   }
 
-  if ($(".main-menu__list").length && $(".mobile-nav__container").length) {
-    let navContent = document.querySelector(".main-menu__list").outerHTML;
-    let mobileNavContainer = document.querySelector(".mobile-nav__container");
-    mobileNavContainer.innerHTML = navContent;
-  }
+  setTimeout(
+    function() 
+    {
+      if ($(".main-menu__list").length && $(".mobile-nav__container").length) {
+        let navContent = document.querySelector(".main-menu__list").outerHTML;
+        let mobileNavContainer = document.querySelector(".mobile-nav__container");
+        mobileNavContainer.innerHTML = navContent;
+      }
+    }, 2000);
+
+  
+
+
   if ($(".sticky-header__content").length) {
     let navContent = document.querySelector(".main-menu").innerHTML;
     let mobileNavContainer = document.querySelector(".sticky-header__content");
@@ -477,13 +489,47 @@
     });
   }
 
-  if ($(".mobile-nav__toggler").length) {
-    $(".mobile-nav__toggler").on("click", function (e) {
-      e.preventDefault();
-      $(".mobile-nav__wrapper").toggleClass("expanded");
-      $("app").toggleClass("locked");
-    });
-  }
+
+
+  setTimeout(
+    function() 
+    {
+     
+      if ($(".mobile-nav__toggler").length) {
+        $(".mobile-nav__toggler").on("click", function (e) {
+          e.preventDefault();
+          $(".mobile-nav__wrapper").toggleClass("expanded");
+          $("app").toggleClass("locked");
+        });
+      }
+
+
+    }, 2000);
+
+
+
+
+    // setInterval(function() 
+    // {
+     
+    //   if ($(".mobile-nav__toggler").length) {
+    //     $(".mobile-nav__toggler").on("click", function (e) {
+    //       e.preventDefault();
+    //       $(".mobile-nav__wrapper").toggleClass("expanded");
+    //       $("app").toggleClass("locked");
+    //     });
+    //   }
+
+
+    // }, 100);
+
+
+
+
+
+
+
+
 
   if ($(".search-toggler").length) {
     $(".search-toggler").on("click", function (e) {
